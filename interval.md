@@ -4,11 +4,13 @@
     
     public static func interval(_ period: RxTimeInterval, scheduler: SchedulerType)
 示例:
-        Observable<Int>
-        .interval(1, scheduler: MainScheduler.instance)
-        .subscribe(onNext: {
-            print($0)
-        })
+
+    Observable<Int>
+    .interval(1, scheduler: MainScheduler.instance)
+    .subscribe(onNext: {
+        print($0)
+    })
+    
 输出:
 
     0
